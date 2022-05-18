@@ -1,7 +1,7 @@
-
+import { Router } from './router'
 
 export function App() {
   return (
-    <div>Hello World</div>
+    <Router />
   )
 }
