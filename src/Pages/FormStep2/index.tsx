@@ -21,10 +21,9 @@ export function FormStep2() {
                 payload: 2
             })
         }
-        
-    }, [])
+    }, [dispatch, navigate, state.name])
 
-    function handleNextStep() {
+    function handleNextStep(): void {
         if(state.name !== '') {
             navigate('/step3');
         } else {
