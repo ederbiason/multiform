@@ -30,22 +30,22 @@ export const Description = styled.div`
     color: #B8B8D4;
 `
 
-export const IconArea = styled.div`
+export const IconArea = styled.div<{ active: boolean; }>`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #494a7c;
+    background-color: ${props => props.active ? '#25cd89' : '#494a7c'};
     display: flex;
     align-items: center;
     justify-content: center;
 `
 
-export const Point = styled.div`
+export const Point = styled.div<{ active: boolean; }>`
     width: 15px;
     height: 15px;
     border: 3px solid #494A7C;
     border-radius: 50%;
     margin-left: 30px;
     margin-right: -6px;
-    background-color: #02044A;
+    background-color: ${props => props.active ? '#25cd89' : '#02044A'};
 `  
